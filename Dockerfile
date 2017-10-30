@@ -1,12 +1,12 @@
 # Ubiquiti UniFi Controller
-FROM openjdk:7
+FROM openjdk:8
 MAINTAINER john@johnmccabe.net
 
-LABEL version="5.3.8"
+LABEL version="5.5.24"
 LABEL distro="debian"
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV UNIFI_VERSION 5.3.8
+ENV UNIFI_VERSION 5.5.24
 
 RUN mkdir -p /usr/lib/unifi/data && \
     touch /usr/lib/unifi/data/.unifidatadir
