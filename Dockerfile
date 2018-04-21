@@ -2,11 +2,11 @@
 FROM openjdk:8
 MAINTAINER john@johnmccabe.net
 
-LABEL version="5.5.24"
+LABEL version="5.7.23"
 LABEL distro="debian"
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV UNIFI_VERSION 5.5.24
+ENV UNIFI_VERSION 5.7.23
 
 RUN mkdir -p /usr/lib/unifi/data && \
     touch /usr/lib/unifi/data/.unifidatadir
