@@ -43,4 +43,4 @@ VOLUME /usr/lib/unifi/data
 EXPOSE  3478/udp 8080/tcp 8443/tcp 8880/tcp 8843/tcp
 
 WORKDIR /usr/lib/unifi
-CMD ["java", "-Xmx1024M", "-jar", "/usr/lib/unifi/lib/ace.jar", "start"]
+CMD ["java", "-Xmx256M", "-jar", "/usr/lib/unifi/lib/ace.jar", "start"]
